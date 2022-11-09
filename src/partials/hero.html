@@ -1,3 +1,97 @@
-<section>
-  <h2>HERO</h2>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title-part">passion</span>
+      </h1>
+      <ul class="hero__links">
+        <li><a href="#products" class="hero__link">Products</a></li>
+        <li>
+          <a href="#about" class="hero__link hero__link--how-its-made"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+      <div class="hero__information">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/ic-hero-left-desktop.png    1x,
+              ./images/hero/ic-hero-left-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/ic-hero-left-tablet.png    1x,
+              ./images/hero/ic-hero-left-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./images/hero/ic-hero-left-tablet.png"
+            alt="Ice cream on plate"
+          />
+        </picture>
+        <div class="hero__wrapper hero__wrapper--info">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a href="#products" class="hero__about">
+            <svg class="hero__icon">
+              <use
+                href="./images/sprite.svg#icon-arrow"
+                class="hero__arrow hero__arrow--def"
+              ></use>
+              <use
+                href="./images/sprite.svg#icon-arrow-h"
+                class="hero__arrow hero__arrow--hover"
+              ></use>
+              <use
+                href="./images/sprite.svg#icon-arrow-f"
+                class="hero__arrow hero__arrow--focus"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wrapper">
+      <ul class="hero__list">
+        <li class="hero__item"><span class="hero__number">16</span>cafes</li>
+        <li class="hero__item">
+          <span class="hero__number">23</span>food trucks
+        </li>
+      </ul>
+    </div>
+  </div>
+  <picture>
+    <source
+      srcset="
+        ./images/hero/ic-hero-desktop.png    1x,
+        ./images/hero/ic-hero-desktop@2x.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        ./images/hero/ic-hero-tablet.png    1x,
+        ./images/hero/ic-hero-tablet@2x.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        ./images/hero/ic-hero-mobile.png    1x,
+        ./images/hero/ic-hero-mobile@2x.png 2x
+      "
+      media="(max-width: 767px)"
+    />
+    <img
+      src="./images/hero/ic-hero-mobile.png"
+      alt="Smiling ice cream"
+      class="hero__image"
+    />
+  </picture>
 </section>
