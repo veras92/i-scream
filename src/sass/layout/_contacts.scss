@@ -4,23 +4,49 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   font-weight: 500;
+
+  padding-bottom: 40px; /* падінги секції */
   color: var(--color-text-dark);
   border: 1px solid black;
 }
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .contacts-list-address {
   font-style: normal;
-  border-bottom: 1px solid #e1e1e1;
-}
-.contacts-list-address__link {
-  color: var(--color-bg-product-brown);
-}
-.contacts-calendar__list {
-  letter-spacing: 0;
+
+  padding-bottom: 24px;
+  margin-top: 20px;
 
   border-bottom: 1px solid #e1e1e1;
 }
+.contacts-list-address__city {
+  margin-bottom: 8px;
+}
+
+.contacts-list-address__link {
+  color: var(--color-bg-product-brown);
+}
+
+.contacts-calendar__list {
+  letter-spacing: 0;
+
+  padding-bottom: 24px;
+  margin-top: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-calendar__item {
+  margin-bottom: 8px;
+}
 .contact-list {
   letter-spacing: 0;
+  line-height: 1.5;
+
+  margin-top: 24px;
 }
 .contacts-calendar__time-on {
   color: var(--color-btn-disabled);
@@ -36,7 +62,9 @@
   background-color: var(--color-text-light);
 }
 .contacts-list__category {
-  display: inline;
+  display: flex;
+  align-items: center;
+  text-align: center;
   text-transform: uppercase;
 
   width: max-content;
@@ -47,6 +75,13 @@
   border-radius: 4px;
   background-color: var(--color-btn-default);
 }
-.contact-list {
-  line-height: 1.5;
+
+.contacts__buttons-list {
+  margin-top: 32px;
+  text-align: center;
+}
+.contacts__buttons-item {
+  &:first-child {
+    margin-bottom: 16px;
+  }
 }
