@@ -5,7 +5,7 @@
   letter-spacing: 0.04em;
   font-weight: 500;
 
-  padding-bottom: 40px; /* падінги секції */
+  /* padding-bottom: 40px; падінги секції */
   color: var(--color-text-dark);
   border: 1px solid black;
 }
@@ -18,9 +18,11 @@
   font-style: normal;
 
   padding-bottom: 24px;
-  margin-top: 20px;
 
   border-bottom: 1px solid #e1e1e1;
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 .contacts-list-address__city {
   margin-bottom: 8px;
@@ -28,13 +30,23 @@
 
 .contacts-list-address__link {
   color: var(--color-bg-product-brown);
+
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--cubic);
+  &:hover,
+  &:focus {
+    border-color: var(
+      --color-bg-product-brown
+    ); /* підкреслення через бордер(транзішн не працює на адерлайн) */
+    /* text-decoration: underline;
+    text-decoration-skip-ink: none; */
+  }
 }
 
 .contacts-calendar__list {
   letter-spacing: 0;
 
   padding-bottom: 24px;
-  margin-top: 24px;
 
   border-bottom: 1px solid #e1e1e1;
 }
@@ -45,8 +57,6 @@
 .contact-list {
   letter-spacing: 0;
   line-height: 1.5;
-
-  margin-top: 24px;
 }
 .contacts-calendar__time-on {
   color: var(--color-btn-disabled);
@@ -54,6 +64,14 @@
 .contact-list__mail,
 .contact-list__phone {
   color: var(--color-text-dark);
+
+  transition: color var(--cubic);
+}
+.contact-list__mail:hover,
+.contact-list__mail:focus,
+.contact-list__phone:hover,
+.contact-list__phone:focus {
+  color: var(--color-bg-product-brown);
 }
 .contacts-list__item {
   padding: 40px 32px;
@@ -62,9 +80,7 @@
   background-color: var(--color-text-light);
 }
 .contacts-list__category {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: inline;
   text-transform: uppercase;
 
   width: max-content;
@@ -80,8 +96,120 @@
   margin-top: 32px;
   text-align: center;
 }
-.contacts__buttons-item {
-  &:first-child {
-    margin-bottom: 16px;
+
+/* кнопки */
+.contacts-btn-our-locations {
+  outline: none;
+  transition: background-color var(--cubic), color var(--cubic);
+  &:hover {
+    background-color: var(--color-btn-hover);
+  }
+  &:focus {
+    background-color: var(--color-btn-hover);
+    color: var(--color-text-light);
+  }
+  &:disabled {
+    background-color: var(--color-btn-disabled);
+  }
+}
+.contacts-btn-franchise {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  transition: border-color var(--cubic), color var(--cubic);
+
+  border: 2px solid var(--color-btn-default);
+  &:hover {
+    border-color: var(--color-btn-hover);
+    color: var(--color-text-light);
+  }
+  &:focus {
+    border-color: var(--color-btn-hover);
+    color: var(--color-text-light);
+    fill: var(--color-text-light);
+  }
+  &:disabled {
+    border-color: var(--color-btn-disabled);
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-list-address,
+  .contacts-calendar__list,
+  .contact-list {
+    margin-top: 24px;
+  }
+  .contacts-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+  }
+  .contacts__buttons-item {
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-page {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .contacts-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .contact-list {
+    line-height: inherit;
+  }
+  .contacts-list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 224px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .contacts-list__category {
+    font-size: 16px;
+    line-height: 1.87;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .contacts-list-address,
+  .contacts-calendar__list {
+    padding-bottom: 32px;
+  }
+  .contacts-calendar__item,
+  .contacts-list-address__city {
+    margin-bottom: 12px;
+  }
+  .contacts__buttons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-page {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .contacts-list {
+    gap: 32px;
+  }
+  .contacts-list__item {
+    width: 368px;
+    padding: 40px;
+  }
+  .contacts-list-address__city {
+    margin-bottom: 8px;
   }
 }
