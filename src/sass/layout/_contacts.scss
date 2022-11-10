@@ -6,6 +6,9 @@
   font-weight: 500;
 
   /* padding-bottom: 40px; падінги секції */
+
+  padding-bottom: 40px; /* падінги секції */
+
   color: var(--color-text-dark);
   border: 1px solid black;
 }
@@ -23,6 +26,10 @@
   @media screen and (max-width: 767px) {
     margin-top: 20px;
   }
+
+  margin-top: 20px;
+
+  border-bottom: 1px solid #e1e1e1;
 }
 .contacts-list-address__city {
   margin-bottom: 8px;
@@ -48,6 +55,8 @@
 
   padding-bottom: 24px;
 
+  margin-top: 24px;
+
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -57,6 +66,8 @@
 .contact-list {
   letter-spacing: 0;
   line-height: 1.5;
+
+  margin-top: 24px;
 }
 .contacts-calendar__time-on {
   color: var(--color-btn-disabled);
@@ -81,6 +92,11 @@
 }
 .contacts-list__category {
   display: inline;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   text-transform: uppercase;
 
   width: max-content;
@@ -211,5 +227,10 @@
   }
   .contacts-list-address__city {
     margin-bottom: 8px;
+  }
+  .contacts__buttons-item {
+    &:first-child {
+      margin-bottom: 16px;
+    }
   }
 }
