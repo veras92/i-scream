@@ -1,5 +1,6 @@
 .footer {
-  padding-top: 40px;
+  outline: 1px solid #87ceeb; // delete this
+  padding-bottom: 15px;
 
   &__content {
     @media screen and (min-width: 768px) {
@@ -58,18 +59,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      fill: #84a178;
 
       &__icon {
+        fill: #84a178;
         width: 18px;
         height: 18px;
         transition: fill 0.28s cubic-bezier(0.4, 0, 0.2, 1);
       }
-    }
-    &__social-item:hover,
-    __social-item:focus {
-      fill: white;
-      cursor: pointer;
+      &__icon:hover,
+      &__icon:focus {
+        fill: white;
+        cursor: pointer;
+      }
     }
     &__social-item:not(:last-child) {
       margin-right: 30px;
@@ -111,7 +112,6 @@
 
   @media screen and (min-width: 768px) {
     width: auto;
-    margin: 15px auto 0 auto;
   }
 
   &__text {
