@@ -1,5 +1,5 @@
-/* питання по позішену*/
-/* .contact-page-container {
+/*  позішен*/
+.contact-page-container {
   transform: translateY(-345px);
   margin-bottom: -345px;
   @media screen and (min-width: 768px) {
@@ -10,7 +10,14 @@
     transform: translateY(-96px);
     margin-bottom: -96px;
   }
-} */
+}
+/* падінги секції */
+.contacts-page {
+  padding-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+  }
+}
 
 .contacts-page {
   position: relative;
@@ -19,8 +26,6 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   font-weight: 500;
-
-  /* padding-bottom: 40px; падінги секції */
 
   color: var(--color-text-dark);
   border: 1px solid black;
@@ -54,11 +59,7 @@
   transition: border-color var(--cubic);
   &:hover,
   &:focus {
-    border-color: var(
-      --color-bg-product-brown
-    ); /* підкреслення через бордер(транзішн не працює на адерлайн) */
-    /* text-decoration: underline;
-    text-decoration-skip-ink: none; */
+    border-color: var(--color-bg-product-brown);
   }
 }
 
@@ -111,23 +112,43 @@
   border-radius: 4px;
   background-color: var(--color-btn-default);
 }
-
+/* кнопки */
 .contacts__buttons-list {
   margin-top: 32px;
 
-  text-align: center;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* кнопки */
-.contacts-btn-our-locations {
+.contacts-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  width: 196px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
   outline: none;
-  transition: background-color var(--cubic), color var(--cubic);
+}
+
+.contacts-btn-our-locations {
+  background-color: var(--color-btn-default);
+
+  transition: background-color var(--cubic), color var(--cubic),
+    fill var(--cubic);
   &:hover {
     background-color: var(--color-btn-hover);
   }
   &:focus {
     background-color: var(--color-btn-hover);
     color: var(--color-text-light);
+    fill: var(--color-text-light);
   }
   &:disabled {
     background-color: var(--color-btn-disabled);
@@ -135,17 +156,12 @@
 }
 .contacts-btn-franchise {
   background-color: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 32px;
-  padding-left: 32px;
 
-  transition: border-color var(--cubic), color var(--cubic);
-  outline: none;
+  transition: border-color var(--cubic), color var(--cubic), fill var(--cubic);
+
   border: 2px solid var(--color-btn-default);
   &:hover {
     border-color: var(--color-btn-hover);
-    color: var(--color-text-light);
   }
   &:focus {
     border-color: var(--color-btn-hover);
@@ -166,11 +182,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 280px;
-  }
-  .contacts__buttons-item {
-    &:first-child {
-      margin-bottom: 16px;
-    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -209,10 +220,9 @@
     margin-bottom: 12px;
   }
   .contacts__buttons-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    flex-direction: row;
+
+    margin-top: 60px;
   }
 }
 
@@ -230,5 +240,8 @@
   }
   .contacts-list-address__city {
     margin-bottom: 8px;
+  }
+  .contacts__buttons-list {
+    margin-top: 64px;
   }
 }
