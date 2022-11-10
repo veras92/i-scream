@@ -1,4 +1,19 @@
+/* питання по позішену*/
+/* .contact-page-container {
+  transform: translateY(-345px);
+  margin-bottom: -345px;
+  @media screen and (min-width: 768px) {
+    transform: translateY(-304px);
+    margin-bottom: -304px;
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-96px);
+    margin-bottom: -96px;
+  }
+} */
+
 .contacts-page {
+  position: relative;
   background-color: var(--color-bg-primary);
   font-size: 12px;
   line-height: 1.83;
@@ -6,8 +21,6 @@
   font-weight: 500;
 
   /* padding-bottom: 40px; падінги секції */
-
-  padding-bottom: 40px; /* падінги секції */
 
   color: var(--color-text-dark);
   border: 1px solid black;
@@ -17,6 +30,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .contacts-list-address {
   font-style: normal;
 
@@ -26,8 +40,6 @@
   @media screen and (max-width: 767px) {
     margin-top: 20px;
   }
-
-  margin-top: 20px;
 
   border-bottom: 1px solid #e1e1e1;
 }
@@ -55,8 +67,6 @@
 
   padding-bottom: 24px;
 
-  margin-top: 24px;
-
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -66,8 +76,6 @@
 .contact-list {
   letter-spacing: 0;
   line-height: 1.5;
-
-  margin-top: 24px;
 }
 .contacts-calendar__time-on {
   color: var(--color-btn-disabled);
@@ -93,10 +101,6 @@
 .contacts-list__category {
   display: inline;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   text-transform: uppercase;
 
   width: max-content;
@@ -110,6 +114,7 @@
 
 .contacts__buttons-list {
   margin-top: 32px;
+
   text-align: center;
 }
 
@@ -136,7 +141,7 @@
   padding-left: 32px;
 
   transition: border-color var(--cubic), color var(--cubic);
-
+  outline: none;
   border: 2px solid var(--color-btn-default);
   &:hover {
     border-color: var(--color-btn-hover);
@@ -179,9 +184,7 @@
     align-items: center;
     gap: 16px;
   }
-  .contact-list {
-    line-height: inherit;
-  }
+
   .contacts-list__item {
     display: flex;
     flex-direction: column;
@@ -227,10 +230,5 @@
   }
   .contacts-list-address__city {
     margin-bottom: 8px;
-  }
-  .contacts__buttons-item {
-    &:first-child {
-      margin-bottom: 16px;
-    }
   }
 }
