@@ -1,12 +1,16 @@
 .button__modal-close {
   position: absolute;
-  top: 32px;
-  right: 24px;
-  background-color: transparent;
+  top: 28px;
+  right: 20px;
+
   border: none;
   padding: 5px;
+  background-color: transparent;
   transition: border-color var(--cubic);
 
+  
+
+  
   @media screen and (min-width: 768px) {
     top: 20px;
     right: 20px;
@@ -17,6 +21,18 @@
     fill: var(--color-btn-hover);
     border: 1px solid var(--color-btn-hover);
     border-radius: 50%;
+  }
+
+  &--coffee:hover,
+  &--coffee:focus {
+    fill: var(--color-text-dark);
+    border-color: var(--color-btn-default);
+  }
+
+  &--shake:hover,
+  &--shake:focus {
+    fill: #D6936D;
+    border-color: #D6936D;
   }
 }
 .button__close-icon {
@@ -53,6 +69,10 @@
     max-height: 100%;
     overflow-y: scroll;
   }
+
+  &--shake {
+    border-color: #D6936D;
+  }
 }
 
 .modal__title {
@@ -73,10 +93,12 @@
   width: 131px;
   height: 131px;
   border-radius: 50%;
-  background-color: #9cbe8f;
+  background-color: var(--color-modal-bg-green);
   background-image: url(../images/modal-products/modal-products-mobile.jpg);
   box-shadow: 0 5px var(--color-modal-bg-picture-shadow),
     0 10px 20px var(--color-modal-bg-shadow-green);
+
+
 
     @media screen and (min-width: 768px) {
         margin-top: 24px;
@@ -105,6 +127,80 @@
     }
   }
 }
+
+.modal__title--coffee::after {
+  background-color: rgba(248, 210, 78, 0.6)  ;
+  box-shadow: 0 6px rgba(248, 210, 78, 0.6) ,
+    0 10px 20px rgba(248, 210, 78, 0.9)   ;
+    background-image: url(../images/products/products2-mobile.jpg);
+    background-size: cover;
+    
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+    }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  & {
+    background-image: url(../images/products/products2-mobile@2x.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  background-image: url(../images/products/products2-desktop.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/products/products2-desktop@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+}
+
+.modal__title--shake::after {
+  background-color: #D6936D;
+  box-shadow: 0 6px #D6936D,
+    0 10px 20px rgba(0, 0, 0, 0.25)
+    ;
+    background-image: url(../images/products/products3-mobile.jpg);
+    background-size: cover;
+    
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+    }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  & {
+    background-image: url(../images/products/products3-mobile@2x.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  background-image: url(../images/products/products3-desktop.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/products/products3-desktop@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+}
+
 .modal__subtitle {
   font-family: var(--font-primary);
   font-size: 20px;
@@ -131,6 +227,14 @@
   padding: 11px 0 11px 11px;
   border-radius: 10px;
   border: 1px solid var(--color-bg-primary);
+
+  &--coffee {
+    border: 1px solid var(--color-btn-default);
+  }
+
+  &--shake {
+    border: 1px solid #D6936D;
+  }
 }
 
 .client-info__comment {
@@ -138,6 +242,14 @@
   border-radius: 10px;
   border: 1px solid var(--color-bg-primary);
   min-height: 84px;
+
+  &--coffee {
+    border: 1px solid var(--color-btn-default);
+  }
+
+  &--shake {
+    border: 1px solid #D6936D;
+  }
 }
 
 .client-info__input::placeholder,
@@ -162,6 +274,7 @@
   background-color: var(--color-btn-default);
   transition: color var(--cubic), background-color var(--cubic);
 
+
   &:hover {
     color: var(--color-text-dark);
     background-color: var(--color-btn-hover);
@@ -170,5 +283,17 @@
   &:focus {
     color: var(--color-text-light);
     background-color: var(--color-btn-hover);
+  }
+
+  &--coffee:hover,
+  &--coffee:focus {
+    color:  var(--color-btn-default);
+    background-color:var(--color-text-dark);
+  }
+
+  &--shake:hover,
+  &--shake:focus {
+    color:  #D6936D;
+    background-color:var(--color-text-dark);
   }
 }

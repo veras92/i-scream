@@ -5,7 +5,7 @@
           <use class="why" href="./images/sprite.svg#icon-close-button"></use>
         </svg>
       </button>
-      <h4 class="modal__title">Chololate icecream</h4>
+      <h2 class="modal__title">Chololate icecream</h2>
       <div class="nutrition">
         <div class="nutrition__info">
           <p class="nutrition__amount">320</p>
@@ -24,7 +24,7 @@
           <p class="nutrition__name">Carbs</p>
         </div>
       </div>
-      <h5 class="modal__subtitle">Ingredients</h5>
+      <h3 class="modal__subtitle">Ingredients</h3>
       <ul class="ingredients">
         <li class="ingredients__item">
           <p class="ingredients__name">Milk</p>
@@ -84,3 +84,188 @@
     </div>
   </div>
   
+
+
+
+  <div class="backdrop is-hidden" data-about-coffee-modal>
+    <div class="modal">
+      <button type="button" class="button__modal-close button__modal-close--coffee" data-about-coffee-modal-close>
+        <svg class="button__close-icon">
+          <use class="why" href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title modal__title--coffee">Ice coffee</h2>
+      <div class="nutrition">
+        <div class="nutrition__info nutrition__info--coffee">
+          <p class="nutrition__amount nutrition__amount--coffee">90</p>
+          <p class="nutrition__name">kcal</p>
+        </div>
+        <div class="nutrition__info nutrition__info--coffee">
+          <p class="nutrition__amount nutrition__amount--coffee">200g</p>
+          <p class="nutrition__name">Protein</p>
+        </div>
+        <div class="nutrition__info nutrition__info--coffee">
+          <p class="nutrition__amount nutrition__amount--coffee">500g</p>
+          <p class="nutrition__name">Fats</p>
+        </div>
+        <div class="nutrition__info nutrition__info--coffee">
+          <p class="nutrition__amount nutrition__amount--coffee">10g</p>
+          <p class="nutrition__name">Carbs</p>
+        </div>
+      </div>
+      <h3 class="modal__subtitle">Ingredients</h3>
+      <ul class="ingredients">
+        <li class="ingredients__item">
+          <p class="ingredients__name">Coffee beans</p>
+          <p class="ingredients__amount">1 cup</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Vanilla extract</p>
+          <p class="ingredients__amount">70mg</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Coconut milk</p>
+          <p class="ingredients__amount">100 ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Cocoa powder</p>
+          <p class="ingredients__amount">50g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Sugar</p>
+          <p class="ingredients__amount">40g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Almond milk</p>
+          <p class="ingredients__amount">50ml</p>
+        </li>
+      </ul>
+      <form class="client-info" id="modal-form">
+        <input
+          type="text"
+          name="name"
+          class="client-info__input client-info__input--coffee"
+          placeholder="Name"
+          autocomplete="on"
+          required
+        />
+        <input
+          type="tel"
+          name="telephone"
+          class="client-info__input client-info__input--coffee"
+          placeholder="Phone"
+          autocomplete="on"
+          required
+          maxlength="12"
+          pattern="[0-9]{12}"
+          title="380xxxxxxxxx"
+        />
+  
+        <textarea
+          class="client-info__comment client-info__comment--coffee"
+          name="comment"
+          placeholder="Comment"
+          autocomplete="off"
+        ></textarea>
+      </form>
+      <button type="submit" form = "modal-form" class="button__modal-submit button__modal-submit--coffee">Submit</button>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="backdrop is-hidden" data-about-shake-modal>
+    <div class="modal modal--shake">
+      <button type="button" class="button__modal-close button__modal-close--shake" data-about-shake-modal-close>
+        <svg class="button__close-icon">
+          <use class="why" href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title modal__title--shake">Milk shake</h2>
+      <div class="nutrition">
+        <div class="nutrition__info nutrition__info--shake">
+          <p class="nutrition__amount nutrition__amount--shake">382</p>
+          <p class="nutrition__name">kcal</p>
+        </div>
+        <div class="nutrition__info nutrition__info--shake">
+          <p class="nutrition__amount nutrition__amount--shake">120g</p>
+          <p class="nutrition__name">Protein</p>
+        </div>
+        <div class="nutrition__info nutrition__info--shake">
+          <p class="nutrition__amount nutrition__amount--shake">300g</p>
+          <p class="nutrition__name">Fats</p>
+        </div>
+        <div class="nutrition__info nutrition__info--shake">
+          <p class="nutrition__amount nutrition__amount--shake">18g</p>
+          <p class="nutrition__name">Carbs</p>
+        </div>
+      </div>
+      <h3 class="modal__subtitle">Ingredients</h3>
+      <ul class="ingredients">
+        <li class="ingredients__item">
+          <p class="ingredients__name">Ice cream</p>
+          <p class="ingredients__amount">2 scoops</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Vanilla extract</p>
+          <p class="ingredients__amount">70mg</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Whipped cream</p>
+          <p class="ingredients__amount">100 ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Cocoa powder</p>
+          <p class="ingredients__amount">50g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Sprinkles</p>
+          <p class="ingredients__amount">60g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Maraschino cherry</p>
+          <p class="ingredients__amount">2</p>
+        </li>
+      </ul>
+      <form class="client-info" id="modal-form">
+        <input
+          type="text"
+          name="name"
+          class="client-info__input client-info__input--shake"
+          placeholder="Name"
+          autocomplete="on"
+          required
+        />
+        <input
+          type="tel"
+          name="telephone"
+          class="client-info__input client-info__input--shake"
+          placeholder="Phone"
+          autocomplete="on"
+          required
+          maxlength="12"
+          pattern="[0-9]{12}"
+          title="380xxxxxxxxx"
+        />
+  
+        <textarea
+          class="client-info__comment client-info__comment--shake"
+          name="comment"
+          placeholder="Comment"
+          autocomplete="off"
+        ></textarea>
+      </form>
+      <button type="submit" form = "modal-form" class="button__modal-submit button__modal-submit--shake">Submit</button>
+
+    </div>
+  </div>
+  
+
+
+
+ 
