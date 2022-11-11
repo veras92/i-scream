@@ -1,0 +1,141 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about__modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(217, 217, 217, 0.15);
+  transition: opacity var(--cubic), visibility var(--cubic);
+}
+
+// ====================== ^^^^  CAN CHANGE  ^^^=============
+
+.about__modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+
+  background: var(--color-text-light);
+  border: 2px solid var(--color-btn-default);
+  border-radius: 10px;
+
+  padding-top: 26px;
+  padding-right: 26px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+
+  transition: transform var(--cubic), opacity var(--cubic);
+
+  .about__modal-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: 280px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 30px 58px;
+  }
+}
+
+.about__modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--color-text-dark);
+
+  transition: color var(--cubic), outline var(--cubic);
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+  }
+
+  &:hover {
+    color: var(--color-btn-hover);
+  }
+
+  &:focus {
+    color: var(--color-btn-hover);
+    outline: 1px solid var(--color-btn-hover);
+  }
+}
+
+.about__modal-close-icon {
+  display: block;
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.about__modal-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-text-dark);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+
+    margin-bottom: 32px;
+  }
+}
+
+.about__modal-video_black {
+  width: 100%;
+  height: 199px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    height: 205px;
+  }
+}
+
+.about__modal-video {
+  width: 100%;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    height: 205px;
+  }
+}
+.about__modal-text {
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: var(--color-text-dark);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
