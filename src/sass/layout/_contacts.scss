@@ -20,7 +20,6 @@
 }
 
 .contacts-page {
-  position: relative;
   background-color: var(--color-bg-primary);
   font-size: 12px;
   line-height: 1.83;
@@ -28,7 +27,8 @@
   font-weight: 500;
 
   color: var(--color-text-dark);
-  border: 1px solid black;
+
+  border: 1px solid black; /* бордер секції */
 }
 .contacts-list {
   display: flex;
@@ -103,8 +103,6 @@
   display: inline;
 
   text-transform: uppercase;
-
-  width: max-content;
 
   padding-left: 23px;
   padding-right: 23px;
