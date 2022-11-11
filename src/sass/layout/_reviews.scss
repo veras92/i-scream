@@ -1,14 +1,75 @@
 .reviews {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    
+    padding-top:181px;
+    padding-bottom:393px;
+
+    background-image: url(../images/reviews/bg-reviews-mobile.jpg);
+    background-size: 320px 940px;
+      
+    margin-left: auto;
+    margin-right: auto; 
+  
+
+    @media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+    screen and (min-resolution: 192dpi) and (max-width:767px),
+    screen and (min-resolution: 2dppx) and (max-width:767px) {          
+        background-image: url(../images/reviews/bg-reviews-mobile@2x.jpg);
+
+    }
+      
+   
+    @media screen and (min-width: 768px) {
+
+        padding-top:218px;
+        padding-bottom:384px;
+
+        background-image: url(../images/reviews/bg-reviews-tablet.jpg);
+    
+        background-size: 768px 958px;
+        max-width: 768px; 
+
+    }
+     
+
+    @media screen and (min-device-pixel-ratio:2) and (min-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width:768px),
+    screen and (min-resolution: 2dppx) and (min-width:768px) {
+                    
+        background-image: url(../images/reviews/bg-reviews-tablet@2x.jpg);
+    
+    }
+    
+     
+    @media screen and (min-width: 1200px) {
+
+        padding-top:451px;
+        padding-bottom:196px;
+       
+        background-image: url(../images/reviews/bg-reviews-desktop.jpg);
+    
+        background-size: 1200px 1020px;
+        max-width: 1200px;
+           
+    }
+                
+    
+    @media screen and (min-device-pixel-ratio:2) and (min-width:1200px),
+    screen and (min-resolution: 192dpi) and (min-width:1200px),
+    screen and (min-resolution: 2dppx) and (min-width:1200px) {
+            
+        background-image: url(../images/reviews/bg-reviews-desktop@2x.jpg);
+
+    }      
+
 }
+
 
 .slider__item {
    
     margin-left: auto;
     margin-right: auto;
     
-    @media screen and (min-width: 420px) {
+    @media screen and (max-width: 767px) {
         width: 280px;
         
     }
@@ -113,6 +174,7 @@
 
 .slick-track {
     display: flex;
+    
 }
 
 .slick-list {
