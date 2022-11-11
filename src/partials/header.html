@@ -1,3 +1,42 @@
-<header>
-  <h2>HEADER</h2>
+<header class="page-header container">
+  <picture>
+    <source srcset="./images/header/logo-desk.png 1x,
+                    ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px" />
+
+    <source srcset="./images/header/logo-tab.png 1x,
+                        ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px" />
+    <source srcset="./images/header/logo-mob.png 1x,
+                        ./images/header/logo-mob@2x.png 2x" media="(max-width: 767px" />
+
+    <img src="./images/header/logo-mob.png" alt="Логотип сторінки">
+  </picture>
+
+  <ul class="page-header__nav">
+    <li class="page-header__nav_items">
+      <a href="" class="page-header__nav_links">Home</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="" class="page-header__nav_links">How it's made</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="" class="page-header__nav_links">Our products</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="" class="page-header__nav_links">Contacts</a>
+    </li>
+  </ul>
+
+  <button type="button" class="mobile-menu-btn">
+    <svg class="mobile-menu-btn__icon" width="32" height="32">
+      <use href="./images/sprite.svg#icon-burger-menu"></use>
+    </svg>
+
+  </button>
+
+  <button type="button" class="page-header-btn">
+    Buy now
+    <svg width="12" height="12">
+      <use href="./images/sprite.svg#icon-arrow-head"></use>
+    </svg>
+  </button>
 </header>
