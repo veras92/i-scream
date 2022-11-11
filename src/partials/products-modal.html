@@ -1,0 +1,86 @@
+<div class="backdrop " data-about-modal>
+    <div class="modal">
+      <button type="button" class="button__modal-close" data-about-modal-close>
+        <svg class="button__close-icon">
+          <use class="why" href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <h4 class="modal__title">Chololate icecream</h4>
+      <div class="nutrition">
+        <div class="nutrition__info">
+          <p class="nutrition__amount">320</p>
+          <p class="nutrition__name">kcal</p>
+        </div>
+        <div class="nutrition__info">
+          <p class="nutrition__amount">4g</p>
+          <p class="nutrition__name">Protein...</p>
+        </div>
+        <div class="nutrition__info">
+          <p class="nutrition__amount">8,2g</p>
+          <p class="nutrition__name">Fats</p>
+        </div>
+        <div class="nutrition__info">
+          <p class="nutrition__amount">40.4g</p>
+          <p class="nutrition__name">Carbs</p>
+        </div>
+      </div>
+      <h5 class="modal__subtitle">Ingredients</h5>
+      <ul class="ingredients">
+        <li class="ingredients__item">
+          <p class="ingredients__name">Milk</p>
+          <p class="ingredients__amount">100ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Belgian chocolate</p>
+          <p class="ingredients__amount">20g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Cream</p>
+          <p class="ingredients__amount">150 ml</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Cocoa powder</p>
+          <p class="ingredients__amount">30g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Sugar</p>
+          <p class="ingredients__amount">40g</p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__name">Vanila sugar</p>
+          <p class="ingredients__amount">10g</p>
+        </li>
+      </ul>
+      <form class="client-info" id="modal-form">
+        <input
+          type="text"
+          name="name"
+          class="client-info__input"
+          placeholder="Name"
+          autocomplete="on"
+          required
+        />
+        <input
+          type="tel"
+          name="telephone"
+          class="client-info__input"
+          placeholder="Phone"
+          autocomplete="on"
+          required
+          maxlength="12"
+          pattern="[0-9]{12}"
+          title="380xxxxxxxxx"
+        />
+  
+        <textarea
+          class="client-info__comment"
+          name="comment"
+          placeholder="Comment"
+          autocomplete="off"
+        ></textarea>
+      </form>
+      <button type="submit" form = "modal-form" class="button__modal-submit">Submit</button>
+
+    </div>
+  </div>
+  
