@@ -20,15 +20,12 @@
 }
 
 .contacts-page {
-  background-color: var(--color-bg-primary);
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
   font-weight: 500;
 
   color: var(--color-text-dark);
-
-  border: 1px solid black; /* бордер секції */
 }
 .contacts-list {
   display: flex;
