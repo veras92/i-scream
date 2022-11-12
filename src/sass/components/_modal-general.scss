@@ -29,14 +29,14 @@ body.modal-open {
 
   &--coffee:hover,
   &--coffee:focus {
-    fill: var(--color-text-dark);
+    fill: var(--color-btn-default);
     border-color: var(--color-btn-default);
   }
 
   &--shake:hover,
   &--shake:focus {
-    fill: #D6936D;
-    border-color: #D6936D;
+    fill: var(--color-shakes);
+    border-color: var(--color-shakes);
   }
 }
 .button__close-icon {
@@ -75,7 +75,7 @@ body.modal-open {
   }
 
   &--shake {
-    border-color: #D6936D;
+    border-color: var(--color-shakes);
   }
 }
 
@@ -133,9 +133,9 @@ body.modal-open {
 }
 
 .modal__title--coffee::after {
-  background-color: rgba(248, 210, 78, 0.6)  ;
-  box-shadow: 0 6px rgba(248, 210, 78, 0.6) ,
-    0 10px 20px rgba(248, 210, 78, 0.9)   ;
+  background-color: var(--color-coffee-shadow);
+  box-shadow: 0 6px var(--color-coffee-shadow),
+    0 10px 20px var(----color-coffee-second-shadow);
     background-image: url(../images/products/products2-mobile.jpg);
     background-size: cover;
     
@@ -169,10 +169,9 @@ body.modal-open {
 }
 
 .modal__title--shake::after {
-  background-color: #D6936D;
-  box-shadow: 0 6px #D6936D,
-    0 10px 20px rgba(0, 0, 0, 0.25)
-    ;
+  background-color: var(--color-shakes);
+  box-shadow: 0 6px var(--color-shakes),
+    0 10px 20px var(--color-shake-shadow);
     background-image: url(../images/products/products3-mobile.jpg);
     background-size: cover;
     
@@ -237,7 +236,7 @@ body.modal-open {
   }
 
   &--shake {
-    border: 1px solid #D6936D;
+    border: 1px solid var(--color-shakes);
   }
 }
 
@@ -252,7 +251,7 @@ body.modal-open {
   }
 
   &--shake {
-    border: 1px solid #D6936D;
+    border: 1px solid var(--color-shakes);
   }
 }
 
@@ -297,7 +296,7 @@ body.modal-open {
 
   &--shake:hover,
   &--shake:focus {
-    color:  #D6936D;
+    color:  var(--color-shakes);
     background-color:var(--color-text-dark);
   }
 }
