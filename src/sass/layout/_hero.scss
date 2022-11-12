@@ -1,15 +1,11 @@
 .hero {
-  // Це треба прибрати
-  outline: 1px solid skyblue;
-  // ------
   position: relative;
-  padding-top: 110px;
+  padding-top: 60px;
   padding-bottom: 239px;
   background-image: url(../images/hero/bg-mobile.png);
   background-size: 320px;
   background-repeat: no-repeat;
   background-position: bottom;
-  overflow: hidden;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -29,7 +25,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 104px;
+    padding-top: 40px;
     padding-bottom: 13px;
     background-size: 768px;
     background-image: url(../images/hero/bg-tablet.png);
@@ -42,7 +38,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 118px;
+    padding-top: 45px;
     padding-bottom: 65px;
     background-image: url(../images/hero/bg-desktop.png);
     background-size: 1200px;
@@ -221,6 +217,7 @@
 .hero__icon {
   width: 40px;
   height: 15px;
+  display: block;
   fill: var(--color-text-light);
 }
 
