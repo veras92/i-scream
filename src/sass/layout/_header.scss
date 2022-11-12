@@ -126,7 +126,7 @@
     transition: opacity var(--cubic), visibility var(--cubic);
 }
 
-.mobile-menu.is-open {
+.mobile-menu.is-open-mobile {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
