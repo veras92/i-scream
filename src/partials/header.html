@@ -1,43 +1,36 @@
-<header class="page-header container">
-  <picture>
-    <source
-      srcset="
-        ./images/header/logo-desk.png    1x,
-        ./images/header/logo-desk@2x.png 2x
-      "
-      media="(min-width: 1200px"
-    />
+<header class="page-header container" id="header">
+  <a href="" class="header-logo-container">
+    <picture>
+      <source srcset="
+            ./images/header/logo-desk.png    1x,
+            ./images/header/logo-desk@2x.png 2x
+          " media="(min-width: 1200px" />
 
-    <source
-      srcset="
-        ./images/header/logo-tab.png    1x,
-        ./images/header/logo-tab@2x.png 2x
-      "
-      media="(min-width: 768px"
-    />
-    <source
-      srcset="
-        ./images/header/logo-mob.png    1x,
-        ./images/header/logo-mob@2x.png 2x
-      "
-      media="(max-width: 767px"
-    />
+      <source srcset="
+            ./images/header/logo-tab.png    1x,
+            ./images/header/logo-tab@2x.png 2x
+          " media="(min-width: 768px" />
+      <source srcset="
+            ./images/header/logo-mob.png    1x,
+            ./images/header/logo-mob@2x.png 2x
+          " media="(max-width: 767px" />
+      <img src="./images/header/logo-mob.png" alt="Логотип сторінки" />
+    </picture>
+  </a>
 
-    <img src="./images/header/logo-mob.png" alt="Логотип сторінки" />
-  </picture>
 
   <ul class="page-header__nav">
     <li class="page-header__nav_items">
-      <a href="" class="page-header__nav_links">Home</a>
+      <a href="#header" class="page-header__nav_links">Home</a>
     </li>
     <li class="page-header__nav_items">
-      <a href="" class="page-header__nav_links">How it's made</a>
+      <a href="#about" class="page-header__nav_links">How it's made</a>
     </li>
     <li class="page-header__nav_items">
-      <a href="" class="page-header__nav_links">Our products</a>
+      <a href="#products" class="page-header__nav_links">Our products</a>
     </li>
     <li class="page-header__nav_items">
-      <a href="" class="page-header__nav_links">Contacts</a>
+      <a href="#contacts" class="page-header__nav_links">Contacts</a>
     </li>
   </ul>
 
@@ -48,8 +41,8 @@
   </button>
 
   <button type="button" class="page-header-btn">
-    Buy now
-    <svg width="12" height="12">
+    Buy now&nbsp;
+    <svg width="12" height="12" class="page-header-btn__icon">
       <use href="./images/sprite.svg#icon-arrow-head"></use>
     </svg>
   </button>
@@ -64,28 +57,19 @@
 
       <div class="mobile-logo">
         <picture>
-          <source
-            srcset="
+          <source srcset="
               ./images/header/logo-desk.png    1x,
               ./images/header/logo-desk@2x.png 2x
-            "
-            media="(min-width: 1200px"
-          />
+            " media="(min-width: 1200px" />
 
-          <source
-            srcset="
+          <source srcset="
               ./images/header/logo-tab.png    1x,
               ./images/header/logo-tab@2x.png 2x
-            "
-            media="(min-width: 768px"
-          />
-          <source
-            srcset="
+            " media="(min-width: 768px" />
+          <source srcset="
               ./images/header/logo-mob.png    1x,
               ./images/header/logo-mob@2x.png 2x
-            "
-            media="(max-width: 767px"
-          />
+            " media="(max-width: 767px" />
 
           <img src="./images/header/logo-mob.png" alt="Логотип сторінки" />
         </picture>
@@ -94,22 +78,22 @@
       <div class="mobile-menu-nav-container">
         <ul class="mobile-menu__nav">
           <li class="mobile-menu__nav_items">
-            <a href="" class="mobile-menu__nav_links">Home</a>
+            <a href="#header" class="mobile-menu__nav_links">Home</a>
           </li>
           <li class="mobile-menu__nav_items">
-            <a href="" class="mobile-menu__nav_links">How it's made</a>
+            <a href="#about" class="mobile-menu__nav_links">How it's made</a>
           </li>
           <li class="mobile-menu__nav_items">
-            <a href="" class="mobile-menu__nav_links">Our products</a>
+            <a href="#products" class="mobile-menu__nav_links">Our products</a>
           </li>
           <li class="mobile-menu__nav_items">
-            <a href="" class="mobile-menu__nav_links">Contact</a>
+            <a href="#contacts" class="mobile-menu__nav_links">Contact</a>
           </li>
         </ul>
 
         <div class="btn-container">
           <button type="button" class="mobile-menu-btn">
-            Buy now
+            Buy now&nbsp;
             <svg width="12" height="12">
               <use href="./images/sprite.svg#icon-arrow-head"></use>
             </svg>
