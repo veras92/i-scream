@@ -3,19 +3,19 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-primary);
-    padding-top: 8px;
+    letter-spacing: normal;
 }
 
 .page-header__nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 
 
 .page-header__nav_links {
-
     color: var(--color-text-light);
     font-weight: 700;
     font-size: 16px;
@@ -47,6 +47,7 @@
     width: 152px;
     height: 42px;
     border-radius: 10px;
+    margin-top: 28px;
 
     transition: background-color var(--cubic), color var(--cubic);
 
@@ -63,6 +64,10 @@
     &:disabled {
         background-color: var(--color-btn-disabled);
     }
+}
+
+.header-logo-container {
+    margin-top: 8px;
 }
 
 .page-header-btn__icon {
@@ -83,12 +88,14 @@
 
 
 @media screen and (max-width: 1199px) {
-    .page-header {
-        padding-top: 20px;
-    }
+    
 
     .page-header__nav {
         display: none;
+    }
+
+    .page-header-btn {
+        margin-top: 24px;
     }
 
     .mobile-menu-burger {
@@ -96,22 +103,6 @@
         margin-left: auto;
         margin-right: 38px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .page-header {
-        padding-top: 12px;
-    }
-
-    .page-header-btn {
-        display: none;
-    }
-
-    .mobile-menu-burger {
-        margin-right: 0;
-    }
-
-
 }
 
 
@@ -146,8 +137,7 @@
     
 }
 
- .mobile-menu__close-btn {
-     
+ .mobile-menu__close-btn {  
      border: none;
      background-color: transparent;
      padding: 0;
@@ -226,13 +216,22 @@
 
 
 @media screen and (max-width: 767px) {
-   .mobile-menu__close-btn {
+    .page-header-btn {
+        display: none;
+    }
+
+    .mobile-menu-burger {
+        margin-right: 0;
+        margin-top: 16px;
+    }
+   
+    .mobile-menu__close-btn {
         position: absolute;
         top: 4px;
         right: 20px;
     
    }
-   
+
    .mobile-menu-nav-container {
     margin-top: 51px
    }
@@ -241,8 +240,8 @@
         font-weight: 700;
     }
 
-    .mobile-logo {
-        margin-top: 12px;    
+    .header-logo-container {
+        margin-top: 12px;
     }
 
     .mobile-menu__nav_links {
@@ -251,15 +250,23 @@
         
     }
 
+    .mobile-logo {
+        margin-top: 12px;
+    }
 
     .mobile-menu__nav_items:not(:last-child) {
         margin-bottom: 32px;
     }
 
+    
 
 }
 
 @media screen and (min-width: 768px) {
+
+    .mobile-menu__container {
+        position: relative;
+    }
 
     .mobile-menu__close-btn {
         position: absolute;
@@ -277,9 +284,13 @@
     }
 
     .mobile-menu__nav_links {
-        font-size: 40px;
+        font-size: 48px;
         line-height: 1.21;
 
+    }
+
+    .mobile-menu-burger {
+        margin-top: 29px;
     }
 
     .mobile-menu__nav_items:not(:last-child) {
