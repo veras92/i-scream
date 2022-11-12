@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    align-items: flex-end;
   }
 
   @media screen and (min-width: 1200px) {
@@ -24,7 +25,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 260px;
+    width: 352px;
   }
 }
 
@@ -68,7 +69,11 @@
     }
   }
 }
-
+.social-networks {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 28px;
+  }
+}
 .social-networks__list {
   display: flex;
   justify-content: end;
