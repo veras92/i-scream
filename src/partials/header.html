@@ -26,8 +26,8 @@
     </li>
   </ul>
 
-  <button type="button" class="mobile-menu-btn">
-    <svg class="mobile-menu-btn__icon" width="32" height="32">
+  <button type="button" class="mobile-menu-burger" mobile-header-menu-open>
+    <svg class="mobile-menu-burger__icon" width="32" height="32">
       <use href="./images/sprite.svg#icon-burger-menu"></use>
     </svg>
 
@@ -39,4 +39,64 @@
       <use href="./images/sprite.svg#icon-arrow-head"></use>
     </svg>
   </button>
+
+  <div class="mobile-menu container" mobile-header-menu>
+    <div class="container mobile-menu__container">
+      <button class="mobile-menu__close-btn" mobile-header-menu-close>
+        <svg class="mobile-menu__close-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-logo">
+        <picture>
+          <source srcset="./images/header/logo-desk.png 1x,
+                                      ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px" />
+
+          <source srcset="./images/header/logo-tab.png 1x,
+                                          ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px" />
+          <source srcset="./images/header/logo-mob.png 1x,
+                                          ./images/header/logo-mob@2x.png 2x" media="(max-width: 767px" />
+
+          <img src="./images/header/logo-mob.png" alt="Логотип сторінки">
+        </picture>
+      </div>
+
+      <div class="mobile-menu-nav-container">
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__nav_items">
+            <a href="" class="mobile-menu__nav_links">Home</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="" class="mobile-menu__nav_links">How it's made</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="" class="mobile-menu__nav_links">Our products</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="" class="mobile-menu__nav_links">Contact</a>
+          </li>
+        </ul>
+
+        <div class="btn-container">
+          <button type="button" class="mobile-menu-btn">
+            Buy now
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-arrow-head"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
 </header>
