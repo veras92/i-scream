@@ -36,6 +36,8 @@
 
 
 .page-header-btn {
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
     line-height: 1.21;
@@ -61,6 +63,10 @@
     &:disabled {
         background-color: var(--color-btn-disabled);
     }
+}
+
+.page-header-btn__icon {
+    line-height: 0;
 }
 
 .mobile-menu-burger {
@@ -148,6 +154,12 @@
 
 .mobile-menu__close-icon {
     fill: var(--color-text-light);
+    transition: fill var(--cubic);
+
+    &:hover,
+    &:focus {
+        fill: var(--color-btn-default);
+    }
 }
 
 .mobile-menu__nav_items {
@@ -180,6 +192,8 @@
 }
 
 .mobile-menu-btn {
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
     font-weight: 600;
@@ -189,9 +203,6 @@
     width: 152px;
     height: 42px;
     border-radius: 10px;
-
-    
-    
 
     transition: background-color var(--cubic), color var(--cubic);
 
