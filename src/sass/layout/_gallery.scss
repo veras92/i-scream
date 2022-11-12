@@ -1,21 +1,25 @@
 .section-gallery {
     padding-top: 18px;
-    padding-bottom: 37.5px;
-        
-    @media screen and (min-width: 768px) {        
-        padding-top: 20px;
-        padding-bottom: 27.5px;
+} 
+
+.section-gallery__container {
+    transform: translateY(+106px);
+    margin-top: -106px;
+
+    @media screen and (min-width: 768px) {
+        transform: translateY(+163px);
+        margin-top: -163px;
     }
-    
-        @media screen and (min-width: 1200px) {        
-        padding-top: 43px;
-        padding-bottom: 61.5px;
+
+    @media screen and (min-width: 1200px) {
+        transform: translateY(+328px);
+        margin-top: -328px;
     }
 }
 
 .continer-gallery {
     position: relative;
-    overflow: hidden;
+    
     max-width: 279px;
     height: 130.03px;
     margin: auto;
@@ -45,7 +49,7 @@
     animation-duration: 15s;
     animation-timing-function: cubic-bezier(.17, .67, .83, .67);
     animation-iteration-count: infinite;
-    
+
     @media screen and (min-width: 768px) {
         max-width: 704px;
         height: 327px;
@@ -55,7 +59,7 @@
     @media screen and (min-width: 1200px) {
         max-width: 1013px;
         height: 422px;
-        border-radius: 24px;       
+        border-radius: 24px;
     }
 }
 
@@ -72,20 +76,20 @@
 }
 
 @keyframes anim1 {
-    0%, 8.3% { bottom: -100%; opacity: 0; }
-    8.3%, 25% { bottom: 25%; opacity: 1; }
-    33.33%, 100% { bottom: 110%; opacity: 1; }
+    0%, 8.3% { opacity: 0; }
+    8.3%, 25% { opacity: 1; }
+    33.33%, 100% { opacity: 1; }
 }
 
 @keyframes anim2 {
-    0%, 33.33% { bottom: -100%; opacity: 0; }
-    41.63%, 58.29% { bottom: 25%; opacity: 1; }
-    66.66%, 100% { bottom: 110%; opacity: 1; }
+    0%, 33.33% { opacity: 0; }
+    41.63%, 58.29% { opacity: 1; }
+    66.66%, 100% { opacity: 1; }
 }
 
 @keyframes anim3 {
-    0%, 66.66% { bottom: -100%; opacity: 0; }
-    74.96%, 91.62% { bottom: 25%; opacity: 1; }
-    100% { bottom: 110%; opacity: 1; }
+    0%, 66.66% { opacity: 0; }
+    74.96%, 91.62% { opacity: 1; }
+    100% { opacity: 1; }
 }
 
