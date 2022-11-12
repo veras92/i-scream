@@ -124,18 +124,21 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-bg-primary);
+    transform: translateX(100%);
 
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity var(--cubic), visibility var(--cubic);
+
+    transition: opacity var(--cubic), visibility var(--cubic), transform var(--cubic);
 }
 
 .mobile-menu.is-open-mobile {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateX(0);
 }
 
 .mobile-menu__container {
