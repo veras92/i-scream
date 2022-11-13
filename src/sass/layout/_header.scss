@@ -212,8 +212,8 @@
 
   .mobile-menu__close-btn {
     position: absolute;
-    top: 4px;
-    right: 20px;
+    top: 14px;
+    right: 13px;
   }
   .mobile-menu__close-icon {
     width: 19px;
@@ -238,6 +238,7 @@
 
   .mobile-logo {
     margin-top: 12px;
+    margin-left: 10px;
   }
 
   .mobile-menu__nav_items:not(:last-child) {
