@@ -74,9 +74,9 @@
   &--scream {
     font-size: 30px;
     background-color: transparent;
-    box-shadow: 0 6px 20px var(--color-shake-shadow);
     border: 3px solid var(--color-btn-default);
-    box-shadow: 0 6px 20px var(--color-btn-default);
+    
+    transform: translateY(37px);
   }
 
   @media screen and (min-width: 768px) {
@@ -142,3 +142,13 @@
     }
   }
 }
+.checkbox-container {
+  width: 65px;
+  height: 90px;
+}
+
+.checkbox:checked + .nutrition__amount--scream {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px var(--color-btn-default);
+}
+
