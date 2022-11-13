@@ -1,6 +1,17 @@
 .footer {
+  outline: 1px solid skyblue;
+  padding-bottom: 63px;
+
   @media screen and (max-width: 1199px) {
     position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 11px;
   }
 }
 
@@ -140,17 +151,14 @@
 
 .copyright {
   padding-top: 16px;
-  padding-bottom: 63px;
 
   @media screen and (min-width: 768px) {
     padding-top: 14px;
-    padding-bottom: 13px;
   }
 
   @media screen and (min-width: 1200px) {
     position: relative;
     padding-top: 12px;
-    padding-bottom: 11px;
   }
 }
 
