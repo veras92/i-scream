@@ -5,10 +5,19 @@
   justify-content: center;
   margin-bottom: 39px;
 
+  &--scream {
+    margin-bottom: 20px;
+  }
   @media screen and (min-width: 768px) {
     gap: 20px;
     margin-bottom: 48px;
+
+    &--scream {
+      margin-bottom: 24px;
+    }
   }
+
+  
 }
 .nutrition__info {
   display: flex;
@@ -26,7 +35,9 @@
   &--shake {
     border-color: var(--color-shakes);
   }
-
+  &--scream {
+    border-color: var(--color-btn-default)
+  }
   
   @media screen and (min-width: 768px) {
     width: 65px;
@@ -60,11 +71,24 @@
     box-shadow: 0 6px 20px var(--color-shake-shadow);
   }
 
+  &--scream {
+    font-size: 30px;
+    background-color: transparent;
+    box-shadow: 0 6px 20px var(--color-shake-shadow);
+    border: 3px solid var(--color-btn-default);
+    box-shadow: 0 6px 20px var(--color-btn-default);
+  }
+
   @media screen and (min-width: 768px) {
     width: 53px;
     height: 53px;
     margin-bottom: 7px;
     font-size: 12px;
+
+    &--scream {
+      font-size: 40px;
+      
+    }
   }
 }
 
@@ -85,6 +109,10 @@
 }
 .ingredients {
   margin-bottom: 48px;
+
+  &--scream {
+    margin-bottom: 24px;
+  }
 }
 .ingredients__item {
   display: flex;
@@ -94,7 +122,23 @@
   line-height: 1.8;
   letter-spacing: 4%;
 
+ 
+
   &:not(:last-child) {
     margin-bottom: 11px;
+
+
+  }
+
+  &--scream {
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 }
