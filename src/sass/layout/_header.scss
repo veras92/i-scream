@@ -1,7 +1,8 @@
 .page-header {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     font-family: var(--font-primary);
     padding-top: 8px;
 }
@@ -34,6 +35,11 @@
     margin-right: 27px;
 }
 
+.header-butn {
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+}
 
 .page-header-btn {
     display: flex;
@@ -93,8 +99,7 @@
 
     .mobile-menu-burger {
         display: block;
-        margin-left: auto;
-        margin-right: 38px;
+       
     }
 }
 
